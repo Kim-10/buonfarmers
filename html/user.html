@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+	<div class="wrap">
+
+		@@include('../includes/header.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Мой кабинет</span>
+				</div>
+
+				<div class="row user">
+					<div class="col-xs-3">
+						<div class="user__title">Мой кабинет</div>
+						<a href="user.html" class="user__link is-active">Личные данные</a>
+						<a href="user_waitlist.html" class="user__link">Лист ожидания</a>
+						<a href="user_orders.html" class="user__link">Мои заказы</a>
+						<a href="user_reviews.html" class="user__link">Мои отзывы</a>
+						<a href="user_viewed.html" class="user__link">Просмотренные товары</a>
+						<a href="user_favs.html" class="user__link">Избранное</a>
+					</div>
+					<div class="col-xs-6">
+						<div class="title">Личные данные</div>
+						<div class="horform">
+							<div class="horform__line">
+								<label>Имя и фамилия</label>
+								<div class="horform__value">Константин Пряхин</div>
+							</div>
+							<div class="horform__line">
+								<label>E-mail</label>
+								<div class="horform__value">pr.konstantin@gmail.com</div>
+							</div>
+							<div class="horform__line">
+								<label>Телефон</label>
+								<div class="horform__value">
+									<div>+38 063 790 01 34</div>
+									<div>+38 050 456 01 02</div>
+								</div>
+							</div>
+							<div class="horform__line">
+								<label>Адрес доставки</label>
+								<div class="horform__value">
+									<p>
+										г.Хуст, Закарпатская область,
+										Хустсткий р-н, ул. Ивана-Франка
+										д.185а
+									</p>
+									<p>г.Киев, ул.Пушкина д.24 кв.32</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-3">
+						<div class="user__fastlinks">
+							<a href="user_edit.html" class="user__fastlink">Редактировать личные данные</a>
+							<a href="user_password.html" class="user__fastlink">Изменить пароль</a>
+							<a href="#" class="user__exit">Выход</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

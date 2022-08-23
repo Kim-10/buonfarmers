@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+
+	<div class="wrap">
+
+		@@include('../includes/header_nouser.html')
+
+		<main>
+
+			<div class="container">
+				<div class="errorpage">
+					<div class="errorpage__cell">
+						<div class="errorpage__text">
+							<b>Страница не найдена</b>
+							Неправильно набран адрес или такой страницы <br>больше не существует
+						</div>
+					</div>
+					<div class="errorpage__cell">
+						<img src="../images/404.jpg" class="errorpage__img">
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+
+
+				<div class="title"><span class="icon-eye"></span> Просмотренные товары</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item_oldprice.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+				</div>
+
+				<div class="title">Лидеры продаж</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

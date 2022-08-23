@@ -1,0 +1,94 @@
+.jq {
+	&-file {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			opacity: 0;
+			font-size: 100px;
+			line-height: 1em;
+		}
+		&__name {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
+	&-selectbox, &-select-multiple {
+		position: relative;
+		display: inline-block;
+		select {
+			pointer-events: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			opacity: 0;
+		}
+		li {
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			//white-space: nowrap;
+		}
+	}
+	&-selectbox {
+		z-index: 10;
+		&__select {
+			position: relative;
+		}
+		&-text {
+			overflow: hidden;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		&__dropdown {
+			position: absolute;
+			ul {
+				position: relative;
+				overflow: auto;
+				overflow-x: hidden;
+				list-style: none;
+				-webkit-overflow-scrolling: touch;
+			}
+		}
+		&__search input {
+			-webkit-appearance: textfield;
+			&::-webkit-search-cancel-button, &::-webkit-search-decoration {
+				-webkit-appearance: none;
+			}
+		}
+	}
+	&-select-multiple ul {
+		position: relative;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
+	&-number {
+		display: inline-block;
+		&__field input {
+			-moz-appearance: textfield;
+			text-align: left;
+			/* для Opera Presto */
+			&::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+				margin: 0;
+				/* в каких-то браузерах присутствует отступ */
+				-webkit-appearance: none;
+			}
+		}
+	}
+}

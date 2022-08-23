@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+	<div class="wrap">
+
+		@@include('../includes/header.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Мой кабинет</span>
+				</div>
+
+				<div class="row user">
+					<div class="col-xs-3">
+						<div class="user__title">Мой кабинет</div>
+						<a href="user.html" class="user__link is-active">Личные данные</a>
+						<a href="user_waitlist.html" class="user__link">Лист ожидания</a>
+						<a href="user_orders.html" class="user__link">Мои заказы</a>
+						<a href="user_reviews.html" class="user__link">Мои отзывы</a>
+						<a href="user_viewed.html" class="user__link">Просмотренные товары</a>
+						<a href="user_favs.html" class="user__link">Избранное</a>
+					</div>
+					<div class="col-xs-9">
+						<div class="title">Личные данные</div>
+						<div class="notify"><div class="notify__inner js-notify-text"></div><div class="notify__close js-notify-close"><span class="icon-remove"></span></div></div>
+						<form class="horform">
+							<div class="horform__line">
+								<label>Имя</label>
+								<input type="text" class="input" value="Константин">
+							</div>
+							<div class="horform__line">
+								<label>Фамилия</label>
+								<input type="text" class="input" value="Пряхин">
+							</div>
+							<div class="horform__line">
+								<label>E-mail</label>
+								<input type="email" class="input" value="pr.konstantin@gmail.com">
+							</div>
+							<div class="horform__line">
+								<label>Телефон</label>
+								<div class="horform__key">
+									+38 063 790 01 34 <span class="icon-remove js-horform-remove js-tooltip-simple" title="Удалить телефон"></span>
+								</div>
+								<div class="horform__key">
+									+38 050 456 01 02 <span class="icon-remove js-horform-remove js-tooltip-simple" title="Удалить телефон"></span>
+								</div>
+								<button class="horform__addvalue js-horform-add-phone">Добавить телефон</button>
+							</div>
+							<div class="horform__line">
+								<label>Адрес доставки</label>
+								<div class="horform__key">
+									г.Хуст, Закарпатская область, Хустсткий р-н, ул. Ивана-Франка д.185а <span class="icon-remove js-horform-remove js-tooltip-simple" title="Удалить адрес"></span>
+								</div>
+								<div class="horform__key">
+									г.Киев, ул.Пушкина д.24 кв.32 <span class="icon-remove js-horform-remove js-tooltip-simple" title="Удалить адрес"></span>
+								</div>
+								<button class="horform__addvalue js-horform-add-address">Добавить адрес</button>
+							</div>
+							<div class="horform__submit">
+								<input type="submit" class="btn" value="Сохранить">
+								<button type="button" class="btn btn-gray">Отмена</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Buon Farmers</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1170, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/plugins.css">
+
+</head>
+<body>
+
+	<div class="wrap">
+
+		<header class="header">
+	<div class="container">
+		<div class="header__promo"><img src="../images/header-promo.png"></div>
+		<div class="row">
+			<div class="col-xs-6">
+				<ul class="header__topmenu">
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Доставка и Оплата</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6">
+				<div class="header__user">
+					<span class="icon-user"></span>
+					<!--<a class="header__user&#45;&#45;link" data-fancypopup href="#login">Вход</a> / <a href="#register" data-fancypopup class="header__user&#45;&#45;link">Регистрация</a>-->
+					<div class="header__user--button js-header-user-button">
+						<div class="header__user--name">Константин Пряхин</div>
+						<div class="icon-down"></div>
+					</div>
+					<div class="header__user--dropdown js-header-user-dropdown">
+						<a href="user.html" class="header__user--menulink">Личные данные</a>
+						<a href="user_waitlist.html" class="header__user--menulink">Лист ожидания</a>
+						<a href="user_orders.html" class="header__user--menulink">Мои заказы</a>
+						<a href="user_reviews.html" class="header__user--menulink">Мои отзывы</a>
+						<a href="user_viewed.html" class="header__user--menulink">Просмотренные товары</a>
+						<a href="#" class="header__user--menulink">Выход</a>
+					</div>
+				</div>
+				<!--<div class="header__user">-->
+					<!--<span class="icon-user"></span>-->
+					<!--<a class="header__user&#45;&#45;link" data-fancypopup href="#login">Вход</a> / <a href="#register" data-fancypopup class="header__user&#45;&#45;link">Регистрация</a>-->
+				<!--</div>-->
+				<div class="header__lang js-lang">
+					<div class="header__lang--dropdown">
+						<span class="icon-down"></span>
+						<span class="header__lang--item is-active">Рус</span>
+						<a href="/en" class="header__lang--item">Анг</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__middle">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">
+					<a href="/" class="header__logo"><img src="../images/logo.svg" alt="Buon Farmers"></a>
+				</div>
+				<div class="col-xs-4">
+					<form class="search" autocomplete="off">
+						<input type="text" name="keyword"  autocomplete="false" autocapitalize="off" placeholder="Поиск по сайту" class="search__input">
+						<button type="submit" class="search__submit"><span class="icon-search"></span></button>
+					</form>
+
+				</div>
+				<div class="col-xs-5">
+					<div class="header__informer js-fav-informer">
+						<a href="favorites.html" class="header__informer--link"></a>
+						<span class="header__informer--count">1</span>
+						<span class="icon-heart"></span>
+					</div>
+					<div class="header__informer js-cart-informer">
+						<a href="cart.html" class="header__informer--link"></a>
+						<span class="header__informer--count">12</span>
+						<span class="icon-cart"></span>
+					</div>
+					<div class="header__phones">
+						<div class="header__phones--wrap">
+							<div class="header__phones--dropdown js-phones">
+								<span class="icon-down"></span>
+								<a href="tel:0987807070" class="header__phones--number is-active">098 780 70 70</a>
+								<a href="tel:0987807070" class="header__phones--number">093 780 70 70</a>
+								<a href="tel:0987807070" class="header__phones--number">050 780 70 70</a>
+							</div>
+						</div>
+						<div class="header__phones--callback" data-fancypopup data-src="#callback">
+							<span class="icon-phone"></span>
+							<button class="header__phones--link" type="button">Перезвоните мне</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-semena"></span>
+							<span class="nav__table">
+								<span class="nav__cell">Семена</span>
+							</span>
+						</a>
+						<ul>
+							<li><a href="catalog.html">Кукуруза</a></li>
+							<li><a href="catalog.html">Подсолнух</a></li>
+							<li><a href="catalog.html">Рапс</a></li>
+							<li><a href="catalog.html">Пшеница</a></li>
+							<li><a href="catalog.html">Бобовые</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-sredstva"></span>
+							<span class="nav__table">
+								<span class="nav__cell">Средства защиты</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-udobren"></span>
+							<span class="nav__table">
+								<span class="nav__cell">Удобрения</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-trayding"></span>
+							<span class="nav__table">
+								<span class="nav__cell">Трейдинг</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-elevatoru"></span>
+							<span class="nav__table">
+								<span class="nav__cell">Элеваторы</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="cats.html">
+							<span class="icon-cat-machine"></span>
+							<span class="nav__table">
+								<span class="nav__cell">С/Х машины и оборудование</span>
+							</span>
+						</a>
+						<ul>
+							<li><a href="catalog.html">Кукуруза</a></li>
+							<li><a href="catalog.html">Подсолнух</a></li>
+							<li><a href="catalog.html">Рапс</a></li>
+							<li><a href="catalog.html">Пшеница</a></li>
+							<li><a href="catalog.html">Бобовые</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Мой кабинет</span>
+				</div>
+
+				<div class="row user">
+					<div class="col-xs-3">
+						<div class="user__title">Мой кабинет</div>
+						<a href="user.html" class="user__link ">Личные данные</a>
+						<a href="user_waitlist.html" class="user__link ">Лист ожидания</a>
+						<a href="user_orders.html" class="user__link">Мои заказы</a>
+						<a href="user_reviews.html" class="user__link">Мои отзывы</a>
+						<a href="user_viewed.html" class="user__link">Просмотренные товары</a>
+						<a href="user_favs.html" class="user__link is-active">Избранное</a>
+					</div>
+					<div class="col-xs-9">
+						<div class="title">Избранное</div>
+						<div class="favs">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="favs__summ">
+										2 товара на сумму <b>3 500 грн.</b>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<button type="button" class="favs__button">Удалить</button>
+									<button type="button" class="btn"><span class="icon-cart"></span>Купить</button>
+								</div>
+							</div>
+						</div>
+						<div class="cattop clearfix">
+							<div class="sort">
+								Сортировать:
+								<select name="sort" class="js-styler jq-selectbox-full">
+									<option selected value="">По популярности</option>
+									<option value="">Сначала дешевле</option>
+									<option value="">Сначала дороже</option>
+									<option value="">Акционные</option>
+									<option value="">Новинки</option>
+								</select>
+							</div>
+						</div>
+						<div class="items row">
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button class="item__remove js-remove-item" type="button"><span class="icon-close"></span></button>
+<a href="product.html" class="item">
+	<span class="item__buttons">
+		<!--<span class="item__buttons&#45;&#45;pre js-preorder" type="button">Сообщить о поступлении</span>-->
+		<span class="item__buttons--check js-add-to-check" type="button"><span class="icon-check"></span></span>
+		<!--<span class="item__buttons&#45;&#45;fav js-add-to-fav" type="button"><span class="icon-heart"></span></span>-->
+		<!--<span class="item__buttons&#45;&#45;fav item__buttons&#45;&#45;fav-remove js-remove-from-fav" type="button"><span class="icon-close"></span></span>-->
+		<span class="item__buttons--cart js-add-to-cart" type="button"><span class="icon-check"></span><span class="icon-cart"></span><span class="item__buttons--text">В корзину</span></span>
+	</span>
+	<span class="item__labels">
+		<span class="item__labels--item">TOP</span>
+		<span class="item__labels--item is-new">NEW</span>
+		<span class="item__labels--item is-sale">-30%</span>
+	</span>
+	<span class="item__image">
+		<span class="item__image--cell">
+			<img src="../images/item1.jpg">
+		</span>
+	</span>
+	<span class="item__name">
+		Комплексное минеральное удобрение для черники и голубики высокорослой Master master master
+	</span>
+	<span class="item__bottom">
+		<!--<span class="item__nostock">нет в наличии</span>-->
+		<!--<span class="item__preorder js-tooltip" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet assumenda doloribus id illo officiis saepe sequi velit! Praesentium, voluptates!">под заказ <span class="question">?</span></span>-->
+		<!--<span class="item__price&#45;&#45;old">13, 50 грн.</span>-->
+		<span class="item__price">28, 00 грн.</span>
+	</span>
+</a>
+							</div>
+							<div class="col-xs-4">
+								<button type="button" class="showmore js-showmore">
+									<span class="showmore__icon">
+										<span class="icon-refresh"></span>
+									</span>
+									<span class="showmore__text">
+										Показать еще<br>
+										12 товаров
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#" class="pagination__link">1</a>
+							<a href="#" class="pagination__link">2</a>
+							<a href="#" class="pagination__link is-active">3</a>
+							<a href="#" class="pagination__link">4</a>
+							<a href="#" class="pagination__link">...</a>
+							<a href="#" class="pagination__link">15</a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	<footer class="footer">
+	<div class="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="subscribe__icon"><span class="icon-mail"></span></div>
+					<div class="subscribe__text">
+						<span>Хотите всегда быть в курсе наших акций и скидок?</span>
+						Подпишитесь на рассылку
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<form class="subscribe__form">
+						<input type="email" class="input" placeholder="Введите ваш email" required>
+						<input type="submit" value="Подписаться" class="btn">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5">
+					<div class="footer__title">Каталог продукции</div>
+					<a href="#" class="footer__link">Семена</a>
+					<a href="#" class="footer__link">Средства защиты</a>
+					<a href="#" class="footer__link">Удобрения</a>
+					<a href="#" class="footer__link">Трейдинг</a>
+					<a href="#" class="footer__link">Элеваторы</a>
+					<a href="#" class="footer__link">С/Х Машины и оборудование</a>
+				</div>
+				<div class="col-xs-4">
+					<div class="footer__title">Полезные ссылки</div>
+					<a href="#" class="footer__link">О нас</a>
+					<a href="#" class="footer__link">Гарантия</a>
+					<a href="#" class="footer__link">Доставка и Оплата</a>
+					<a href="#" class="footer__link">Контакты</a>
+					<a href="#" class="footer__link">Пользовательское соглашение</a>
+					<a href="#" class="footer__link">Продавать на BUONFARMERS</a>
+				</div>
+				<div class="col-xs-3">
+					<div class="footer__title">Контакты</div>
+					<a href="tel:+380987807070" class="footer__phone">098 780 70 70</a>
+					<a href="tel:+380987807070" class="footer__phone">098 780 70 70</a>
+					<a href="tel:+380987807070" class="footer__phone">098 780 70 70</a>
+					<div class="footer__callback" data-fancybox data-src="#callback">
+						<span class="icon-phone"></span>
+						<button class="footer__callback--button" type="button">Перезвоните мне</button>
+					</div>
+					<div class="footer__worktime">
+						<span class="icon-time"></span>
+						ПН-ПТ с 09:00 до 19:00
+					</div>
+				</div>
+			</div>
+			<div class="footer__logo">
+				<img src="../images/logo-white.svg">
+			</div>
+			<div class="footer__copyright">
+				© 2018 BUONFARMERS.COM
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div style="display:none;">
+	<div id="removeitem" class="removeitem">
+		<button class="removeitem__close js-removeitem-close" type="button"><span class="icon-close"></span></button>
+		<div class="removeitem__block">
+			<a href="#">
+				<span class="icon-heart"></span>
+				<span class="removeitem__text">Переместить<br>в список желаний</span>
+			</a>
+		</div>
+		<div class="removeitem__block">
+			<a href="#">
+				<span class="icon-close"></span>
+				<span class="removeitem__text">Удалить<br>без сохранения</span>
+			</a>
+		</div>
+	</div>
+	<div id="preorder">
+		<div class="popup">
+			<form onsubmit="$(this).hide().next('.js-form-success').show();return false;">
+				<div class="popup__text">
+					Введите свой адрес эл. почты <br>и мы Вас оповестим, когда <br>товар появится в наличии
+				</div>
+				<input type="email" class="input" placeholder="E-mail" required>
+				<input type="submit" class="btn" value="Сохранить">
+			</form>
+			<div class="popup__success js-form-success">
+				Мы сообщим Вам на указаный <br>электронный адрес, когда <br>товар появится в наличии
+			</div>
+		</div>
+	</div>
+	<div id="cart">
+	<div class="popup popup-full">
+		<div class="popup__title">Корзина</div>
+		<div class="incart">
+			<div class="incart__item">
+				<div class="incart__image">
+					<a href="#"><img src="../images/product33.jpg"></a>
+				</div>
+				<div class="incart__right">
+					<a href="#" class="incart__name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер)</a>
+					<div class="incart__info">
+						<div class="incart__manufacturer">
+							Продавец: <span><img src="../images/seller1.jpg"></span>
+						</div>
+						<div class="incart__price">69, 90 грн.</div>
+						<div class="incart__counter">
+							<div class="counter js-amount">
+								<button type="button" class="counter__button counter__button-minus js-amount-minus"></button>
+								<input type="number" name="amounts[]" value="1" min="1" max="5" class="counter__input js-amount-input">
+								<button type="button" class="counter__button counter__button-plus js-amount-plus is-disabled"></button>
+							</div>
+						</div>
+						<div class="incart__summary">
+							208, 80 грн.
+						</div>
+						<div class="incart__remove">
+								<span class="js-cart-remove incart__remove--link">
+									<span class="icon-close"></span>
+								</span>
+						</div>
+					</div>
+					<div class="incart__minimum">
+						*минимальная сумма заказа: 1500 грн
+					</div>
+				</div>
+			</div>
+			<div class="incart__item is-error">
+				<div class="incart__image">
+					<a href="#"><img src="../images/product33.jpg"></a>
+				</div>
+				<div class="incart__right">
+					<a href="#" class="incart__name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер)</a>
+					<div class="incart__info">
+						<div class="incart__manufacturer">
+							Продавец: <span><img src="../images/seller1.jpg"></span>
+						</div>
+						<div class="incart__price">69, 90 грн.</div>
+						<div class="incart__counter">
+							<div class="counter js-amount">
+								<button type="button" class="counter__button counter__button-minus js-amount-minus"></button>
+								<input type="number" name="amounts[]" value="1" min="1" max="5" class="counter__input js-amount-input">
+								<button type="button" class="counter__button counter__button-plus js-amount-plus is-disabled"></button>
+							</div>
+						</div>
+						<div class="incart__summary">
+							208, 80 грн.
+						</div>
+						<div class="incart__remove">
+								<span class="js-cart-remove incart__remove--link">
+									<span class="icon-close"></span>
+								</span>
+						</div>
+					</div>
+					<div class="incart__minimum">
+						*минимальная сумма заказа: 1500 грн
+					</div>
+				</div>
+			</div>
+			<div class="incart__item">
+				<div class="incart__image">
+					<a href="#"><img src="../images/product33.jpg"></a>
+				</div>
+				<div class="incart__right">
+					<a href="#" class="incart__name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер)</a>
+					<div class="incart__info">
+						<div class="incart__manufacturer">
+							Продавец: <span><img src="../images/seller1.jpg"></span>
+						</div>
+						<div class="incart__price">69, 90 грн.</div>
+						<div class="incart__counter">
+							<div class="counter js-amount">
+								<button type="button" class="counter__button counter__button-minus js-amount-minus"></button>
+								<input type="number" name="amounts[]" value="1" min="1" max="5" class="counter__input js-amount-input">
+								<button type="button" class="counter__button counter__button-plus js-amount-plus is-disabled"></button>
+							</div>
+						</div>
+						<div class="incart__summary">
+							208, 80 грн.
+						</div>
+						<div class="incart__remove">
+								<span class="js-cart-remove incart__remove--link">
+									<span class="icon-close"></span>
+								</span>
+						</div>
+					</div>
+					<div class="incart__minimum">
+						*минимальная сумма заказа: 1500 грн
+					</div>
+				</div>
+			</div>
+			<div class="incart__all">
+				Итого: <span>208, 80 грн.</span>
+			</div>
+			<div class="incart__bottom">
+				<div class="row">
+					<div class="col-xs-6">
+						<button class="btn btn-gray js-close-fancy" type="button">Продолжить покупки</button>
+					</div>
+					<div class="col-xs-6">
+						<a href="#" class="btn">Оформить заказ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="login">
+		<div class="popup">
+			<div class="popup__title popup__title-center">Вход</div>
+			<div class="popup__socials">
+				<button class="popup__socials--btn popup__socials--facebook" type="button"><span class="icon-fb"></span>Facebook</button>
+				<button class="popup__socials--btn popup__socials--gplus" type="button"><span class="icon-gp"></span>Google</button>
+			</div>
+			<div class="popup__or"><span>Или</span></div>
+			<form class="form">
+				<div class="form__line">
+					<input type="email" class="input" placeholder="E-mail" required>
+					<div class="input__error">*заполните поле “E-mail”</div>
+				</div>
+				<div class="form__line">
+					<input type="password" class="input" placeholder="Пароль" required>
+					<div class="input__error">*заполните поле “Пароль”</div>
+					<a href="#passwordremind" onclick="$.fancybox.close();" class="form__line--link" data-fancypopup>Забыли пароль?</a>
+				</div>
+				<div class="form__line">
+					<div class="css3check">
+						<label>
+							<input type="checkbox" name="remember">
+							<span>Запомнить меня</span>
+						</label>
+					</div>
+				</div>
+				<div class="form__submit">
+					<input type="submit" value="Войти" class="btn">
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="register">
+		<div class="popup">
+			<form class="form js-register-form" onsubmit="$(this).hide().next('.js-form-success').show();$(this).next('.js-form-success').height($(this).height());return false;">
+				<div class="popup__title popup__title-center">Регистрация</div>
+				<div class="popup__socials">
+					<button class="popup__socials--btn popup__socials--facebook" type="button"><span class="icon-fb"></span>Facebook</button>
+					<button class="popup__socials--btn popup__socials--gplus" type="button"><span class="icon-gp"></span>Google</button>
+				</div>
+				<div class="popup__or"><span>Или</span></div>
+				<div class="form__line">
+					<input type="text" class="input" placeholder="Имя" required>
+					<div class="input__error">*заполните поле “Имя”</div>
+				</div>
+				<div class="form__line">
+					<input type="email" class="input" placeholder="E-mail" required>
+					<div class="input__error">*заполните поле “E-mail”</div>
+				</div>
+				<div class="form__line">
+					<input type="password" class="input" placeholder="Пароль" required>
+					<div class="input__error">*заполните поле “Пароль”</div>
+				</div>
+				<div class="form__line">
+					<input type="password" class="input" placeholder="Пароль еще раз" required>
+					<div class="input__error">*заполните поле “Пароль еще раз”</div>
+				</div>
+				<div class="form__submit">
+					<input type="submit" value="Зарегистрироваться" class="btn">
+				</div>
+			</form>
+			<div class="popup__success js-form-success">
+				<div class="popup__success--table">
+					<div class="popup__success--cell">
+						<b>Спасибо<br>за регистрацию!</b>
+						Данные о регистрации<br>
+						отправлены на ваш e-mail
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="callback">
+		<div class="popup">
+			<form class="form" onsubmit="$(this).hide().next('.js-form-success').show();$(this).next('.js-form-success').height($(this).height());return false;">
+				<div class="popup__title popup__title-center">Обратный звонок</div>
+				<div class="popup__text">
+					Заполните форму заявки и мы<br>
+					свяжемся с Вами через вскорее
+				</div>
+				<div class="form__line">
+					<input type="text" class="input" placeholder="Ваше имя" required>
+					<div class="input__error">*заполните поле “Ваше имя”</div>
+				</div>
+				<div class="form__line">
+					<input type="tel" class="js-mask-phone input" placeholder="Телефон" required>
+					<div class="input__error">*заполните поле “Телефон”</div>
+				</div>
+				<div class="form__submit">
+					<input type="submit" value="Заказать" class="btn">
+				</div>
+			</form>
+			<div class="popup__success js-form-success">
+				<div class="popup__success--table">
+					<div class="popup__success--cell">
+						<div class="icon-mail"></div>
+						<b>ваша заявка <br>отправлена!</b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="passwordremind">
+		<div class="popup">
+			<form class="form" onsubmit="$(this).hide().next('.js-form-success').show();$(this).next('.js-form-success').height($(this).height());return false;">
+				<div class="popup__title popup__title-center">Напомнить пароль</div>
+				<div class="form__line">
+					<input type="email" class="input" placeholder="E-mail" required>
+					<div class="input__error">*заполните поле “E-mail”</div>
+				</div>
+				<div class="popup__smalltext">
+					Введите адрес почты, который Вы указывали при регистрации, на этот адрес отправим пароль
+					<br>
+					<a data-fancypopup onclick="$.fancybox.close();" href="#login">Я вспомнил пароль</a>
+				</div>
+				<div class="form__submit">
+					<input type="submit" value="Напомнить пароль" class="btn">
+				</div>
+			</form>
+			<div class="popup__success js-form-success">
+				<div class="popup__success--table">
+					<div class="popup__success--cell">
+						<div class="icon-mail"></div>
+						<b>ваша заявка <br>отправлена на указанную почту!</b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="../js/html5shiv.min.js"></script>
+<script src="../js/respond.min.js"></script>
+<![endif]-->
+
+<!-- общие скрипты -->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery.maskedinput.min.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script src="../js/jquery.formstyler.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/tooltipster.bundle.min.js"></script>
+<script src="../js/ion.rangeSlider.min.js"></script>
+<script src="../js/jquery.autocomplete.min.js"></script>
+
+<!-- только для карточки товара (вертикальная карусель) -->
+<script src="../js/slick.min.js"></script>
+
+<!-- только для корзины - Google карта новой почты и складов -->
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBzRhfteCRgJpNxV7BA1YxpY8sdNnMKdac&#038;sensor=false&#038;language=uk&#038;signed_in=true&#038;libraries=places&#038;ver=4.9.8'></script>
+<script src="../js/snazzy-info-window.min.js"></script>
+<script src="../js/maps.js"></script>
+
+
+<!-- общие custom скрипты -->
+<script src="../js/main.js"></script>
+
+
+
+
+</body>
+</html>

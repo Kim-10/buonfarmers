@@ -1,0 +1,233 @@
+@import "icons_variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?gh1pod');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?gh1pod#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?gh1pod') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?gh1pod') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?gh1pod#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-details {
+  &:before {
+    content: $icon-details;
+  }
+}
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+.icon-remove {
+  &:before {
+    content: $icon-remove;
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye;
+  }
+}
+.icon-time {
+  &:before {
+    content: $icon-time; 
+  }
+}
+.icon-arrow-slide-right {
+  &:before {
+    content: $icon-arrow-slide-right; 
+  }
+}
+.icon-arrow-slide-left {
+  &:before {
+    content: $icon-arrow-slide-left; 
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down; 
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left; 
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right; 
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up; 
+  }
+}
+.icon-cart {
+  &:before {
+    content: $icon-cart; 
+  }
+}
+.icon-cat-elevatoru {
+  &:before {
+    content: $icon-cat-elevatoru; 
+  }
+}
+.icon-cat-machine {
+  &:before {
+    content: $icon-cat-machine; 
+  }
+}
+.icon-cat-semena {
+  &:before {
+    content: $icon-cat-semena; 
+  }
+}
+.icon-cat-sredstva {
+  &:before {
+    content: $icon-cat-sredstva; 
+  }
+}
+.icon-cat-trayding {
+  &:before {
+    content: $icon-cat-trayding; 
+  }
+}
+.icon-cat-udobren {
+  &:before {
+    content: $icon-cat-udobren; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-comm {
+  &:before {
+    content: $icon-comm; 
+  }
+}
+.icon-comments {
+  &:before {
+    content: $icon-comments; 
+  }
+}
+.icon-consult {
+  &:before {
+    content: $icon-consult; 
+  }
+}
+.icon-delivery {
+  &:before {
+    content: $icon-delivery; 
+  }
+}
+.icon-down {
+  &:before {
+    content: $icon-down; 
+  }
+}
+.icon-fb {
+  &:before {
+    content: $icon-fb; 
+  }
+}
+.icon-garant {
+  &:before {
+    content: $icon-garant; 
+  }
+}
+.icon-gp {
+  &:before {
+    content: $icon-gp; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
+  }
+}
+.icon-leafs {
+  &:before {
+    content: $icon-leafs; 
+  }
+}
+.icon-loc {
+  &:before {
+    content: $icon-loc; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-refresh {
+  &:before {
+    content: $icon-refresh; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-tags {
+  &:before {
+    content: $icon-tags; 
+  }
+}
+.icon-truck {
+  &:before {
+    content: $icon-truck; 
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user; 
+  }
+}
+.icon-wallet {
+  &:before {
+    content: $icon-wallet; 
+  }
+}
+.icon-warranty {
+  &:before {
+    content: $icon-warranty; 
+  }
+}
+

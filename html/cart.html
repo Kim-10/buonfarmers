@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body class="cart">
+
+	<div class="wrap">
+
+		@@include('../includes/header_cart.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Оформление заказа</span>
+				</div>
+
+				<div class="title">Оформление заказа</div>
+
+				<div class="steps">
+					<div class="steps__step is-active">
+						<div class="steps__circle">1</div>
+						<div class="steps__text">Мои данные</div>
+					</div>
+					<div class="steps__step ">
+						<div class="steps__circle">2</div>
+						<div class="steps__text">Доставка и оплата</div>
+					</div>
+					<div class="steps__step ">
+						<div class="steps__circle">3</div>
+						<div class="steps__text">Заказ оформлен</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-8">
+
+						<div class="tabs">
+							<div class="tabs__caption js-tabs">
+								<div class="tabs__link is-active" data-target="new"><span>Я новый покупатель</span></div>
+								<div class="tabs__link" data-target="exist"><span>Я постоянный клиент</span></div>
+							</div>
+							<div class="tabs__content" id="new">
+								<form class="form form-register">
+									<div class="form__line">
+										<input type="text" class="input" placeholder="Имя" required>
+										<div class="input__error">*заполните поле “Имя”</div>
+									</div>
+									<div class="form__line">
+										<input type="text" class="input" placeholder="Фамилия" required>
+										<div class="input__error">*заполните поле “Фамилия”</div>
+									</div>
+									<div class="form__line">
+										<input type="tel" class="input" placeholder="Телефон" required>
+										<div class="input__error">*заполните поле “Телефон”</div>
+									</div>
+									<div class="form__line">
+										<input type="email" class="input" placeholder="E-mail" required>
+										<div class="form__notation">*для отправки счет-фактуры</div>
+										<div class="input__error">*заполните поле “E-mail”</div>
+									</div>
+									<div class="form__submit">
+										<input type="submit" value="Далее" class="btn">
+									</div>
+								</form>
+							</div>
+							<div class="tabs__content" id="exist" style="display: none;">
+								<div class="row">
+									<div class="col-xs-6">
+										<form class="form form-login">
+											<div class="form__line">
+												<input type="email" class="input" placeholder="E-mail" required>
+												<div class="input__error">*заполните поле “E-mail”</div>
+											</div>
+											<div class="form__line">
+												<input type="password" class="input" placeholder="Пароль" required>
+												<div class="input__error">*заполните поле “Пароль”</div>
+												<a href="#passwordremind" class="form__line--link" data-fancypopup>Забыли пароль?</a>
+											</div>
+											<div class="form__submit">
+												<input type="submit" value="Войти" class="btn">
+											</div>
+										</form>
+									</div>
+									<div class="col-xs-6">
+										<div class="soclogin">
+											<div class="soclogin__or">Или</div>
+											<div class="soclogin__buttons">
+												<button class="soclogin__button soclogin__button-fb" type="button"><span class="icon-fb"></span>Facebook</button>
+												<button class="soclogin__button soclogin__button-gp" type="button"><span class="icon-gp"></span>Google</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="products">
+							<div class="products__scroll">
+								<div class="products__item">
+									<div class="products__image">
+										<img src="../images/product33.jpg">
+									</div>
+									<div class="products__right">
+										<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+										<div class="products__info">
+											1 шт
+											<span class="products__info--price">28, 00 грн.</span>
+										</div>
+									</div>
+								</div>
+								<div class="products__item">
+									<div class="products__image">
+										<img src="../images/product33.jpg">
+									</div>
+									<div class="products__right">
+										<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+										<div class="products__info">
+											1 шт
+											<span class="products__info--price">28, 00 грн.</span>
+										</div>
+									</div>
+								</div>
+								<div class="products__item">
+									<div class="products__image">
+										<img src="../images/product33.jpg">
+									</div>
+									<div class="products__right">
+										<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+										<div class="products__info">
+											1 шт
+											<span class="products__info--price">28, 00 грн.</span>
+										</div>
+									</div>
+								</div>
+								<div class="products__item">
+									<div class="products__image">
+										<img src="../images/product33.jpg">
+									</div>
+									<div class="products__right">
+										<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+										<div class="products__info">
+											1 шт
+											<span class="products__info--price">28, 00 грн.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="products__summary">
+								Итого:
+								<div class="products__summary--price">175, 00 грн.</div>
+							</div>
+							<div class="products__bottom">
+								<button class="products__edit" data-fancypopup data-src="#cart" type="button">
+									<span class="icon-pencil"></span><span class="products__edit--text">Редактировать заказ</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer_cart.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

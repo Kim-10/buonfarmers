@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+
+	<div class="wrap">
+
+		@@include('../includes/header.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <a href="#">Каталог продукции</a> / <a href="#">Семена</a> / <span>Семена ягод</span>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-3">
+
+						<div class="filter">
+							<div class="filter__block">
+								<div class="filter__block--title js-filter-block is-active">Цена <span class="icon-arrow-down"></span></div>
+								<div class="filter__block--wrap" style="display:block;">
+									<div class="filter__price">
+										<div class="filter__price--cell">
+											От
+											<input type="text" value="0" class="input js-filter-price-from">
+										</div>
+										<div class="filter__price--cell"><span></span></div>
+										<div class="filter__price--cell">
+											До
+											<input type="text" value="90 000" class="input js-filter-price-to">
+										</div>
+									</div>
+									<input type="text" value="0" class="js-filter-priceslider">
+								</div>
+							</div>
+							<div class="filter__block">
+								<div class="filter__block--title js-filter-block is-active">Производитель <span class="icon-arrow-down"></span></div>
+								<div class="filter__block--wrap" style="display:block;">
+									<div class="css3check">
+										<label>
+											<input type="checkbox" checked>
+											<span>
+												GL SEED <i>(4)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Legutko Hem Zaden Legutko Hem Zaden <i>(2)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+										<label>
+											<input disabled checked type="checkbox">
+											<span>
+												Legutko <i>(2)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__block">
+								<div class="filter__block--title js-filter-block">Характеристики <span class="icon-arrow-down"></span></div>
+								<div class="filter__block--wrap">
+									<div class="css3check">
+										<label>
+											<input type="checkbox" checked>
+											<span>
+												GL SEED <i>(4)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Legutko Hem Zaden Legutko Hem Zaden <i>(2)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+										<label>
+											<input disabled checked type="checkbox">
+											<span>
+												Legutko <i>(2)</i>
+											</span>
+										</label>
+										<label>
+											<input type="checkbox">
+											<span>
+												Hem Zaden <i>(5)</i>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-9">
+						<div class="title">Семена ягод</div>
+
+						<div class="cattop clearfix">
+							<div class="filter__selected">
+								<a href="#" class="filter__selected--item">GS SEEDS <span class="icon-remove"></span></a>
+								<a href="#" class="filter__selected--item">Голден Гарден <span class="icon-remove"></span></a>
+								<a href="#" class="filter__selected--item">Клубника <span class="icon-remove"></span></a>
+								<div class="filter__selected--all">
+									Подобрано <b>26 товаров</b>
+									<a href="#">Сбросить</a>
+								</div>
+							</div>
+							<div class="sort">
+								Сортировать:
+								<select name="sort" class="js-styler jq-selectbox-full">
+									<option selected value="">По популярности</option>
+									<option value="">Сначала дешевле</option>
+									<option value="">Сначала дороже</option>
+									<option value="">Акционные</option>
+									<option value="">Новинки</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="items row">
+							<div class="col-xs-4">
+								@@include('../includes/item_nophoto.html')
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item_nostock.html')
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item.html', {
+								"favorites": "true",
+								"preorder": "false",
+								"nostock": "false",
+								"oldprice": "false"
+								})
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item.html', {
+								"favorites": "true",
+								"preorder": "false",
+								"nostock": "false",
+								"oldprice": "false"
+								})
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item.html', {
+								"favorites": "true",
+								"preorder": "false",
+								"nostock": "false",
+								"oldprice": "false"
+								})
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item.html', {
+								"favorites": "true",
+								"preorder": "false",
+								"nostock": "false",
+								"oldprice": "false"
+								})
+							</div>
+							<div class="col-xs-4">
+								@@include('../includes/item.html', {
+								"favorites": "true",
+								"preorder": "false",
+								"nostock": "false",
+								"oldprice": "false"
+								})
+							</div>
+							<div class="col-xs-4">
+								<button type="button" class="showmore js-showmore">
+									<span class="showmore__icon">
+										<span class="icon-refresh"></span>
+									</span>
+									<span class="showmore__text">
+										Показать еще<br>
+										12 товаров
+									</span>
+								</button>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a href="#" class="pagination__link">1</a>
+							<a href="#" class="pagination__link">2</a>
+							<a href="#" class="pagination__link is-active">3</a>
+							<a href="#" class="pagination__link">4</a>
+							<a href="#" class="pagination__link">...</a>
+							<a href="#" class="pagination__link">15</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="title">Полезные рекомендации</div>
+
+				<div class="blog row owl-carousel owl-carousel-right js-carousel-blog">
+					<div class="col-xs-4">
+						<div class="blog__item">
+							<a href="#" class="blog__link">
+								<span class="blog__date"><span class="icon-leafs"></span><b>12</b>06.18</span>
+								<img src="../images/blog1.png" class="blog__img">
+								<span class="blog__name">Уход за розами перед цветением. Мучнистая роса</span>
+							</a>
+							<div class="blog__text">Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале огородники засевают семена уже в феврале </div>
+							<div class="blog__more">
+								<a href="#" class="blog__more--link">Читать дальше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="blog__item">
+							<a href="#" class="blog__link">
+								<span class="blog__date"><span class="icon-leafs"></span><b>12</b>06.18</span>
+								<img src="../images/blog1.png" class="blog__img">
+								<span class="blog__name">Уход за розами перед цветением. Мучнистая роса</span>
+							</a>
+							<div class="blog__text">Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале огородники засевают семена уже в феврале </div>
+							<div class="blog__more">
+								<a href="#" class="blog__more--link">Читать дальше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="blog__item">
+							<a href="#" class="blog__link">
+								<span class="blog__date"><span class="icon-leafs"></span><b>12</b>06.18</span>
+								<img src="../images/blog1.png" class="blog__img">
+								<span class="blog__name">Уход за розами перед цветением. Мучнистая роса</span>
+							</a>
+							<div class="blog__text">Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале огородники засевают семена уже в феврале </div>
+							<div class="blog__more">
+								<a href="#" class="blog__more--link">Читать дальше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="blog__item">
+							<a href="#" class="blog__link">
+								<span class="blog__date"><span class="icon-leafs"></span><b>12</b>06.18</span>
+								<img src="../images/blog1.png" class="blog__img">
+								<span class="blog__name">Уход за розами перед цветением. Мучнистая роса</span>
+							</a>
+							<div class="blog__text">Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале огородники засевают семена уже в феврале </div>
+							<div class="blog__more">
+								<a href="#" class="blog__more--link">Читать дальше</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="blog__item">
+							<a href="#" class="blog__link">
+								<span class="blog__date"><span class="icon-leafs"></span><b>12</b>06.18</span>
+								<img src="../images/blog1.png" class="blog__img">
+								<span class="blog__name">Уход за розами перед цветением. Мучнистая роса</span>
+							</a>
+							<div class="blog__text">Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале огородники засевают семена уже в феврале </div>
+							<div class="blog__more">
+								<a href="#" class="blog__more--link">Читать дальше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="text">
+					<p>Опытные дачники знают, что готовить рассаду нужно еще зимой. Некоторые огородники засевают семена уже в феврале, чтобы весной получить первые ростки. Для средней полосы оптимальный вариант – февраль-март. Однако стоит учесть, что разные сорта растений, овощей и ягод засеваются в разное время. При этом важно выбрать самые лучшие семена, которые дадут отличный результат. Как же выбрать среди множества вариантов, особенно, если вы только начинаете знакомство с огородом? Мы собрали для вас полезные рекомендации по выбору. В интернет-магазине Розетка можно заказать качественные семена Украины и производства других стран!</p>
+					<p>Есть несколько способов купить семена. Например, у бабушек на рынке. Традиционно считается, что такой способ надежен - мол, бабушки не обманут. На самом деле у них редко можно встретить интересные гибриды, а информацию о сроках годности вы проверить никак не сможете. Также вы можете выбрать семена в обычном магазине. Однако сегодня есть гораздо лучший способ - купить семена почтой. Украина предлагает широкий ассортимент и достойный выбор.</p>
+				</div>
+
+			</div>
+
+
+
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

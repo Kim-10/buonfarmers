@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body class="cart">
+
+	<div class="wrap">
+
+		@@include('../includes/header_cart.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Оформление заказа</span>
+				</div>
+
+				<div class="title">Оформление заказа</div>
+
+				<div class="steps">
+					<div class="steps__step is-active">
+						<div class="steps__circle">1</div>
+						<div class="steps__text">Мои данные</div>
+					</div>
+					<div class="steps__step is-active">
+						<div class="steps__circle">2</div>
+						<div class="steps__text">Доставка и оплата</div>
+					</div>
+					<div class="steps__step ">
+						<div class="steps__circle">3</div>
+						<div class="steps__text">Заказ оформлен</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-8">
+
+						<div class="cart">
+							<div class="cart__delivery">
+								<div class="cart__title">Способ доставки</div>
+								<select class="js-styler jq-selectbox-full js-cart-payment">
+									<option value="samo" selected>Адресная доставка Новой Почтой</option>
+									<option value="sklad">Самовывоз со склада</option>
+									<option value="address">Самовывоз из Новой Почты</option>
+								</select>
+								<div class="cart__samo cart__delivery--method js-cart-delivery-samo">
+									<input type="text" class="input" placeholder="Город">
+									<input type="text" class="input" placeholder="Улица">
+									<div class="row">
+										<div class="col-xs-6">
+											<input type="text" class="input" placeholder="№ Дома">
+										</div>
+										<div class="col-xs-6">
+											<input type="text" class="input" placeholder="№ Квартиры">
+										</div>
+									</div>
+									<div class="cart__samo--notation">
+										*Сумма доставки рассчитывается<br>
+										по тарифам Новой почты
+									</div>
+									<div class="css3check">
+										<label>
+											<input type="checkbox" checked class="js-check-iam-recepient">
+											<span>
+												Я получатель заказа
+											</span>
+										</label>
+									</div>
+									<div class="cart__recepient">
+										<br>
+										<div class="cart__title">Данные получателя</div>
+										<input type="text" class="input" placeholder="Имя">
+										<input type="text" class="input" placeholder="Фамилия">
+										<input type="tel" class="input js-mask-phone" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="cart__sklad cart__delivery--method js-cart-delivery-sklad" style="display:none;">
+									<div class="cart__sklad--list">
+										<div class="cart__sklad--wrap">
+											<div class="css3radio js-cart-map-list">
+												<label data-id="point__20">
+													<input type="radio" name="delivery_sklad[]" checked>
+													<span>
+														<b>
+															г.Ирпень, Киевская область,<br>
+															Хустсткий р-н, ул. Ивана-Франка<br>
+															д.185а
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__21">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Хуст, Закарпатская область,<br>
+															Хустсткий р-н, ул. Ивана-Франка<br>
+															д.185а
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__23">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Киев, ул. Тараса Шевченка,<br>
+															ТЦ «Атлант»
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__21">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Хуст, Закарпатская область,<br>
+															Хустсткий р-н, ул. Ивана-Франка<br>
+															д.185а
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__23">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Киев, ул. Тараса Шевченка,<br>
+															ТЦ «Атлант»
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__21">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Хуст, Закарпатская область,<br>
+															Хустсткий р-н, ул. Ивана-Франка<br>
+															д.185а
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__23">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Киев, ул. Тараса Шевченка,<br>
+															ТЦ «Атлант»
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__21">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Хуст, Закарпатская область,<br>
+															Хустсткий р-н, ул. Ивана-Франка<br>
+															д.185а
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+												<label data-id="point__23">
+													<input type="radio" name="delivery_sklad[]">
+													<span>
+														<b>
+															г.Киев, ул. Тараса Шевченка,<br>
+															ТЦ «Атлант»
+														</b>
+														Пн—Пт: с 9:00 до 20:00,<br>
+														Сб—Вс: выходной
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="cart__sklad--map">
+										<button class="cart__sklad--button js-cart-sklad-button" type="button">»</button>
+										<div class="cart__sklad--place" id="sklad_map"></div>
+									</div>
+								</div>
+								<div class="cart__address cart__delivery--method js-cart-delivery-address" style="display:none;">
+									<input type="text" class="input" placeholder="Город">
+									<select name="" class="js-styler-search jq-selectbox-input js-cart-samo-select">
+										<option value="1" data-text="Пн—Пт: с 9:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №1</option>
+										<option value="2" data-text="Пн—Пт: с 8:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №2</option>
+										<option value="3" data-text="Пн—Пт: с 7:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №3, ул. Григория Сковороды, 14</option>
+										<option value="4" data-text="Пн—Пт: с 10:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №4</option>
+										<option value="5" data-text="Пн—Пт: с 11:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №5</option>
+										<option value="1" data-text="Пн—Пт: с 9:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №1</option>
+										<option value="2" data-text="Пн—Пт: с 8:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №2</option>
+										<option value="3" data-text="Пн—Пт: с 7:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №3, ул. Григория Сковороды, 14</option>
+										<option value="4" data-text="Пн—Пт: с 10:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №4</option>
+										<option value="5" data-text="Пн—Пт: с 11:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №5</option>
+										<option value="1" data-text="Пн—Пт: с 9:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №1</option>
+										<option value="2" data-text="Пн—Пт: с 8:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №2</option>
+										<option value="3" data-text="Пн—Пт: с 7:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №3, ул. Григория Сковороды, 14</option>
+										<option value="4" data-text="Пн—Пт: с 10:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №4</option>
+										<option value="5" data-text="Пн—Пт: с 11:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b>">Отделение №5</option>
+									</select>
+									<button class="cart__address--onmap js-cart-np-popup" type="button"><span class="icon-loc"></span> <span class="cart__address--onmaptext">Смотреть на карте</span></button>
+									<div class="cart__samo--notation">
+										<div class="cart__samo--text">
+											<b>График работы отделения:</b>
+											<div class="js-cart-samo-text">Пн—Пт: с 9:00 до 20:00,<br>Сб—Вс: выходной<br><b>+38 098 780 70 70<br>+38 098 780 70 70</b></div>
+										</div>
+										*Сумма доставки рассчитывается<br>
+										по тарифам Новой почты
+									</div>
+									<div class="css3check">
+										<label>
+											<input type="checkbox" checked class="js-check-iam-recepient">
+											<span>
+												Я получатель заказа
+											</span>
+										</label>
+									</div>
+									<div class="cart__recepient">
+										<br>
+										<div class="cart__title">Данные получателя</div>
+										<input type="text" class="input" placeholder="Имя">
+										<input type="text" class="input" placeholder="Фамилия">
+										<input type="tel" class="input js-mask-phone" placeholder="Телефон">
+									</div>
+								</div>
+							</div>
+							<div class="cart__payment">
+								<div class="cart__title">Способ оплаты</div>
+								<div class="css3radio js-toggle-payment">
+									<label>
+										<input type="radio" name="payment" checked value="1">
+										<span>Расчетный счет (счет-фактура)</span>
+									</label>
+									<label>
+										<input type="radio" name="payment" value="2">
+										<span>Visa\Mastercard</span>
+									</label>
+								</div>
+								<div class="js-payment-1 cart__payment--more">
+									<div class="form__line">
+										<input type="text" class="input" placeholder="Код ЕГРПОУ">
+										<div class="form__notation">*Счет-фактура на оплату будет отправлена Вам<br>на электронную почту после оформления заказа</div>
+									</div>
+								</div>
+							</div>
+							<div class="cart__comment">
+								<button class="cart__comment--button js-cart-comment" type="button"><span class="icon-comments"></span><span class="cart__comment--text">Добавить комментарий к заказу</span></button>
+								<button class="cart__comment--close js-cart-comment-close" type="button"><span class="icon-close"></span></button>
+								<div class="cart__comment--block">
+									<textarea rows="5" class="input" placeholder="Ваш комментарий"></textarea>
+								</div>
+							</div>
+							<div class="cart__submit">
+								<input type="submit" value="Заказ подтверждаю" class="btn">
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="products">
+							<div class="products__item">
+								<div class="products__image">
+									<img src="../images/product33.jpg">
+								</div>
+								<div class="products__right">
+									<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+									<div class="products__info">
+										1 шт
+										<span class="products__info--price">28, 00 грн.</span>
+									</div>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="../images/product33.jpg">
+								</div>
+								<div class="products__right">
+									<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+									<div class="products__info">
+										1 шт
+										<span class="products__info--price">28, 00 грн.</span>
+									</div>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="products__image">
+									<img src="../images/product33.jpg">
+								</div>
+								<div class="products__right">
+									<div class="products__name">Комплексное минеральное удобрение для черники и голубики высокорослой Master (Мастер), 25г, (Мастер)</div>
+									<div class="products__info">
+										1 шт
+										<span class="products__info--price">28, 00 грн.</span>
+									</div>
+								</div>
+							</div>
+							<div class="products__summary">
+								Итого:
+								<div class="products__summary--price">175, 00 грн.</div>
+							</div>
+							<div class="products__bottom">
+								<button class="products__edit" data-fancypopup data-src="#cart" type="button">
+									<span class="icon-pencil"></span><span class="products__edit--text">Редактировать заказ</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div style="display:none;">
+					<div id="npmap">
+						<div class="npmap">
+							<div class="npmap__left">
+								<div class="npmap__logo"><img src="../images/np-logo.jpg"></div>
+								<div class="npmap__list js-cart-np-map-list">
+									<div class="npmap__item" data-id="point__20">
+										<b>Отделение № 2, ул. Тараса Шевченка</b>
+										Пн—Пт: с 9:00 до 20:00,<br>
+										Сб—Вс: выходной
+										<b>
+											+38 098 780 70 70<br>
+											+38 098 780 70 70
+										</b>
+									</div>
+									<div class="npmap__item" data-id="point__21">
+										<b>Отделение № 2, ул. Тараса Шевченка</b>
+										Пн—Пт: с 9:00 до 20:00,<br>
+										Сб—Вс: выходной
+										<b>
+											+38 098 780 70 70<br>
+											+38 098 780 70 70
+										</b>
+									</div>
+									<div class="npmap__item" data-id="point__23">
+										<b>Отделение № 2, ул. Тараса Шевченка</b>
+										Пн—Пт: с 9:00 до 20:00,<br>
+										Сб—Вс: выходной
+										<b>
+											+38 098 780 70 70<br>
+											+38 098 780 70 70
+										</b>
+									</div>
+								</div>
+							</div>
+							<div class="npmap__right">
+								<div id="npmap__place"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer_cart.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

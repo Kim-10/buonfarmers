@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+	<div class="wrap">
+
+		@@include('../includes/header.html')
+
+		<main>
+
+			<div class="container">
+
+				<div class="breadcrumbs">
+					<a href="#" class="breadcrumbs__link">Главная</a> / <span>Мой кабинет</span>
+				</div>
+
+				<div class="row user">
+					<div class="col-xs-3">
+						<div class="user__title">Мой кабинет</div>
+						<a href="user.html" class="user__link ">Личные данные</a>
+						<a href="user_waitlist.html" class="user__link ">Лист ожидания</a>
+						<a href="user_orders.html" class="user__link is-active">Мои заказы</a>
+						<a href="user_reviews.html" class="user__link">Мои отзывы</a>
+						<a href="user_viewed.html" class="user__link ">Просмотренные товары</a>
+						<a href="user_favs.html" class="user__link ">Избранное</a>
+					</div>
+					<div class="col-xs-9">
+						<div class="title">Мои заказы</div>
+						<div class="orders">
+							<div class="orders__sort js-orders-sort">
+								<button class="orders__sort--button " data-type="details" type="button"><span class="icon-details"></span> <span class="orders__sort--text">В деталях</span></button>
+								<button class="orders__sort--button is-active" data-type="list" type="button"><span class="icon-list"></span> <span class="orders__sort--text">Списком</span></button>
+							</div>
+							<div class="order ">
+								<div class="order__info clearfix">
+									<div class="order__left">
+										<button class="order__number js-order-more" type="button"><span class="order__number--text">№ 2122123334</span><span class="icon-down"></span></button>
+										<div class="order__date">4 июля 2018 в 17:05</div>
+									</div>
+									<div class="order__items">
+										<div class="order__items--wrap">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<div class="order__items--count">
+												1 товар<br>
+												на <b>50 грн</b>
+											</div>
+										</div>
+										<div class="order__full">
+											<button class="order__full--button js-order-full-info"><span class="order__full--text">Полная информация о заказе</span><span class="icon-down"></span></button>
+										</div>
+									</div>
+									<div class="order__full--info">
+										<ul>
+											<li><b>Способ оплаты:</b> наличными</li>
+											<li><b>Способ доставки:</b> самовывоз со склада Новой Почты</li>
+											<li><b>Имя и Фамилия:</b> Олег Самойлов</li>
+											<li><b>Телефон:</b> 063 675 555 53</li>
+											<li><b>Адрес пункта самовывоза:</b> Киев, склад НП №12, пр. О. Стельмана, д. 124</li>
+											<li><b>Email:</b> newhappycustomer@gmail.com</li>
+										</ul>
+									</div>
+									<div class="order__more">
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__cancelled">
+											<button class="order__cancelled--button js-order-cancelled" type="button"><span class="order__cancelled--text">Отмененные товары</span><span class="icon-down"></span></button>
+											<div class="order__cancelled--dropdown">
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__delivery">
+													<b>Способ доставки:</b> самовывоз со склада
+													<div class="order__delivery--price">бесплатно</div>
+												</div>
+											</div>
+										</div>
+										<div class="order__delivery">
+											<b>Способ доставки:</b> самовывоз со склада Новой Почты
+											<div class="order__delivery--price">бесплатно</div>
+										</div>
+										<div class="order__summary">
+											Итого: <b>558, 00 грн.</b>
+										</div>
+									</div>
+								</div>
+								<div class="order__status">
+									<div class="order__status--text">Статус заказа:</div>
+									<div class="order__status--val">Принят</div>
+								</div>
+							</div>
+							<div class="order is-done">
+								<div class="order__info clearfix">
+									<div class="order__left">
+										<button class="order__number js-order-more" type="button"><span class="order__number--text">№ 2122123334</span><span class="icon-down"></span></button>
+										<div class="order__date">4 июля 2018 в 17:05</div>
+									</div>
+									<div class="order__items">
+										<div class="order__items--wrap">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<div class="order__items--count">
+												1 товар<br>
+												на <b>50 грн</b>
+											</div>
+										</div>
+										<div class="order__full">
+											<button class="order__full--button js-order-full-info"><span class="order__full--text">Полная информация о заказе</span><span class="icon-down"></span></button>
+										</div>
+									</div>
+									<div class="order__full--info">
+										<ul>
+											<li><b>Способ оплаты:</b> наличными</li>
+											<li><b>Способ доставки:</b> самовывоз со склада Новой Почты</li>
+											<li><b>Имя и Фамилия:</b> Олег Самойлов</li>
+											<li><b>Телефон:</b> 063 675 555 53</li>
+											<li><b>Адрес пункта самовывоза:</b> Киев, склад НП №12, пр. О. Стельмана, д. 124</li>
+											<li><b>Email:</b> newhappycustomer@gmail.com</li>
+										</ul>
+									</div>
+									<div class="order__more">
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__cancelled">
+											<button class="order__cancelled--button js-order-cancelled" type="button"><span class="order__cancelled--text">Отмененные товары</span><span class="icon-down"></span></button>
+											<div class="order__cancelled--dropdown">
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__delivery">
+													<b>Способ доставки:</b> самовывоз со склада
+													<div class="order__delivery--price">бесплатно</div>
+												</div>
+											</div>
+										</div>
+										<div class="order__delivery">
+											<b>Способ доставки:</b> самовывоз со склада Новой Почты
+											<div class="order__delivery--price">бесплатно</div>
+										</div>
+										<div class="order__summary">
+											Итого: <b>558, 00 грн.</b>
+										</div>
+									</div>
+								</div>
+								<div class="order__status">
+									<div class="order__status--text">Статус заказа:</div>
+									<div class="order__status--val">Выполнен</div>
+								</div>
+							</div>
+							<div class="order is-cancelled">
+								<div class="order__info clearfix">
+									<div class="order__left">
+										<button class="order__number js-order-more" type="button"><span class="order__number--text">№ 2122123334</span><span class="icon-down"></span></button>
+										<div class="order__date">4 июля 2018 в 17:05</div>
+									</div>
+									<div class="order__items">
+										<div class="order__items--wrap">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<img src="../images/item1.jpg">
+											<div class="order__items--count">
+												1 товар<br>
+												на <b>50 грн</b>
+											</div>
+										</div>
+										<div class="order__full">
+											<button class="order__full--button js-order-full-info"><span class="order__full--text">Полная информация о заказе</span><span class="icon-down"></span></button>
+										</div>
+									</div>
+									<div class="order__full--info">
+										<ul>
+											<li><b>Способ оплаты:</b> наличными</li>
+											<li><b>Способ доставки:</b> самовывоз со склада Новой Почты</li>
+											<li><b>Имя и Фамилия:</b> Олег Самойлов</li>
+											<li><b>Телефон:</b> 063 675 555 53</li>
+											<li><b>Адрес пункта самовывоза:</b> Киев, склад НП №12, пр. О. Стельмана, д. 124</li>
+											<li><b>Email:</b> newhappycustomer@gmail.com</li>
+										</ul>
+									</div>
+									<div class="order__more">
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__item">
+											<div class="order__item--image">
+												<img src="../images/item1.jpg">
+											</div>
+											<div class="order__item--right">
+												<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+												<div class="order__item--table">
+													<div class="order__item--cell">
+														28, 00 грн.
+													</div>
+													<div class="order__item--cell">
+														1 шт.
+													</div>
+													<div class="order__item--cell">
+														<span class="order__item--price">28, 00 грн.</span>
+													</div>
+												</div>
+												<div class="order__item--seller">
+													Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+												</div>
+											</div>
+										</div>
+										<div class="order__cancelled">
+											<button class="order__cancelled--button js-order-cancelled" type="button"><span class="order__cancelled--text">Отмененные товары</span><span class="icon-down"></span></button>
+											<div class="order__cancelled--dropdown">
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__item">
+													<div class="order__item--image">
+														<img src="../images/item1.jpg">
+													</div>
+													<div class="order__item--right">
+														<a href="#" class="order__item--name">Комплексное минеральное универсальное удобрение для овощных культур Master (Мастер) <span class="order__item--sku">№ 2234333</span></a>
+														<div class="order__item--table">
+															<div class="order__item--cell">
+																28, 00 грн.
+															</div>
+															<div class="order__item--cell">
+																1 шт.
+															</div>
+															<div class="order__item--cell">
+																<span class="order__item--price">28, 00 грн.</span>
+															</div>
+														</div>
+														<div class="order__item--seller">
+															Продавец: <span class="order__item--selimage"><img src="../images/seller1.jpg"></span>
+														</div>
+													</div>
+												</div>
+												<div class="order__delivery">
+													<b>Способ доставки:</b> самовывоз со склада
+													<div class="order__delivery--price">бесплатно</div>
+												</div>
+											</div>
+										</div>
+										<div class="order__delivery">
+											<b>Способ доставки:</b> самовывоз со склада Новой Почты
+											<div class="order__delivery--price">бесплатно</div>
+										</div>
+										<div class="order__summary">
+											Итого: <b>558, 00 грн.</b>
+										</div>
+									</div>
+								</div>
+								<div class="order__status">
+									<div class="order__status--text">Статус заказа:</div>
+									<div class="order__status--val">Отменен</div>
+								</div>
+							</div>
+							<button class="order__showmore" type="button"><span class="icon-refresh"></span>Показать еще 10</button>
+							<div class="pagination">
+								<a href="#" class="pagination__link">1</a>
+								<a href="#" class="pagination__link">2</a>
+								<a href="#" class="pagination__link is-active">3</a>
+								<a href="#" class="pagination__link">4</a>
+								<a href="#" class="pagination__link">...</a>
+								<a href="#" class="pagination__link">15</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>

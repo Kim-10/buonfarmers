@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../includes/head.html', {
+    "title": "Buon Farmers"
+})
+<body>
+
+
+	<div class="wrap">
+
+		@@include('../includes/header_nouser.html')
+
+		<main>
+
+			<div class="slider owl-carousel js-carousel-slider">
+				<div class="slider__item">
+					<div class="slider__item--wrapper">
+						<div class="slider__table">
+							<div class="slider__table--cell">
+								<div class="slider__name">Заботимся о Вашем урожае</div>
+								<div class="slider__text">Скидки на все удобрения на протяжении всего июня!</div>
+								<a href="#" class="btn slider__button" type="button">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<img src="../images/slider1.jpg" class="slider__image">
+				</div>
+				<div class="slider__item">
+					<div class="slider__item--wrapper">
+						<div class="slider__table">
+							<div class="slider__table--cell">
+								<div class="slider__name">Заботимся о Вашем урожае 2</div>
+								<div class="slider__text">Скидки на все удобрения на протяжении всего июня!</div>
+								<a href="#" class="btn slider__button" type="button">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<img src="../images/slider1.jpg" class="slider__image">
+				</div>
+			</div>
+
+			<div class="container">
+
+				<div class="mainicons">
+					<div class="row">
+						<div class="col-xs-3">
+							<div class="mainicons__item">
+								<div class="icon-consult mainicons__icon"></div>
+								<div class="mainicons__text">
+									Квалифицированная консультация
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="mainicons__item">
+								<div class="icon-garant mainicons__icon"></div>
+								<div class="mainicons__text">
+									Гарантия качества
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="mainicons__item">
+								<div class="icon-delivery mainicons__icon"></div>
+								<div class="mainicons__text">
+									Своевременные поставки
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-3">
+							<div class="mainicons__item">
+								<div class="icon-tags mainicons__icon"></div>
+								<div class="mainicons__text">
+									Лучшие цены
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="title"><span class="icon-eye"></span> Просмотренные товары</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item_oldprice.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+				</div>
+
+				<div class="title">Новинки</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html')
+					</div>
+				</div>
+
+			</div>
+
+			<div class="gaz">
+				<div class="container">
+					<div class="gaz__block">
+						<div class="gaz__title">
+							<span class="icon-leafs"></span>
+							Идеальный газон
+						</div>
+						<div class="gaz__text">Лучшые семена для вашей мечты у нас в продаже!</div>
+						<a href="#" class="btn">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+
+				<div class="title">Лидеры продаж</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+				</div>
+
+				<div class="title">Акции сезона</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-items items row">
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+					<div class="col-xs-3">
+						@@include('../includes/item.html', {
+						"favorites": "true",
+						"preorder": "false",
+						"nostock": "false",
+						"oldprice": "false"
+						})
+					</div>
+				</div>
+
+				<div class="title">Бренды</div>
+
+				<div class="owl-carousel owl-carousel-right js-carousel-brands brands">
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+					<div class="brands__block">
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+						<a href="#" class="brands__item">
+							<span class="brands__item--table">
+								<span class="brands__item--cell">
+									<img src="../images/brand1.jpg">
+								</span>
+							</span>
+							<span class="brands__item--name">Семена овощей Bejo Zaden</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	@@include('../includes/footer.html')
+	@@include('../includes/scripts.html')
+
+</body>
+</html>
